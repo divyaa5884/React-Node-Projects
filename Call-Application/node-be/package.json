@@ -14,7 +14,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm i && npm run build-react-app && node index.js",
+    "build-react-app": "cd ../react-bp && npm install && npm run build"
   },
   "author": "",
   "license": "ISC"

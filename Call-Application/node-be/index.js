@@ -1,18 +1,22 @@
 const express = require('express');
 const logger = require('morgan');
 const cors = require('cors');
-const ctrl = require('./controllers/triggerCall'); 
 const app = express();
 const db = require("./models");
 const route = require('./routes/route');
-const PORT = process.env.PORT || 3001;
+const path = require('path');
 
-app.use(
-    cors({
-        origin: 'http://localhost:3000',
-        credentials: true,
-    })
-)
+const PORT = process.env.PORT || 3001;
+const buildPath = path.join(__dirname, '../react-bp/build');
+app.use(express.static(buildPath));
+console.log('buildPath---', buildPath);
+
+// app.use(
+//     cors({
+//         origin: 'http://localhost:3000',
+//         credentials: true,
+//     })
+// )
 app.use(logger('dev'));
 app.use(express.json());
 app.use(route);
