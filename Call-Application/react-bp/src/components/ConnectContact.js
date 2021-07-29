@@ -53,15 +53,20 @@ class ConnectContact extends Component {
                 <div className="ui form error dialForm">
                     <div className="inline field">
                         <label>Name</label>
-                        <input className="ui input" type = "text" name="name" onChange={(e) => this.handleInputChange(e)} />
+                        <input className="ui input" type = "text" name="name"
+                            onChange={(e) => this.handleInputChange(e)} />
                     </div>
                     <div className="required inline field">
                         <label>Contact No</label>
-                        <input className="ui input" type = "tel" name="connectFrom" onChange={(e) => this.handleInputChange(e)} />
+                        <input className="ui input" type = "tel" name="connectFrom"
+                            placeholder="+91XXXXXXXXXX"
+                            onChange={(e) => this.handleInputChange(e)} />
                     </div>
                     <div className="required inline field">
                         <label>Connect To</label>
-                        <input className="ui input" type = "tel" name="connectTo" onChange={(e) => this.handleInputChange(e)} />
+                        <input className="ui input" type = "tel" name="connectTo"
+                            placeholder="+91XXXXXXXXXX"
+                            onChange={(e) => this.handleInputChange(e)} />
                     </div>
                     <div className="required inline field">
                         <label>Duration(in min(s))</label>

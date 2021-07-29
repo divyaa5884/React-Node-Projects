@@ -9,7 +9,6 @@ const path = require('path');
 const PORT = process.env.PORT || 3001;
 const buildPath = path.join(__dirname, '../react-bp/build');
 app.use(express.static(buildPath));
-console.log('buildPath---', buildPath);
 
 // app.use(
 //     cors({
@@ -17,6 +16,7 @@ console.log('buildPath---', buildPath);
 //         credentials: true,
 //     })
 // )
+console.log('buildPath---', buildPath);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(route);

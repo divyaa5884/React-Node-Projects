@@ -11,12 +11,23 @@ select, input {
 	width: 50% !important
 }
 .callBtn {
-	margin-top: 30px !important;
+	font-size: 18px;
+}
+.ui.primary.button {
+	margin-top: 40px !important;
+}
+.outer-wrapper .text-msg {
+	width: 51%;
+	margin: 100px auto 0 !important;
+}
+.outer-wrapper .goToFormBtn {
+	width: 51%;
+	font-size: 21px !important;
 }
 .timer-wrapper {
 	display: flex;
 	justify-content: space-evenly;
 }
-.time{
+.time {
   font-size: 35px;
 }

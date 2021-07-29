@@ -1,8 +1,9 @@
 module.exports = {
-    HOST: "localhost",
-    USER: "root",
-    PASSWORD: process.env.DB_PASSWORD || '',
-    DB: "plivoCallRecord",
+    HOST: "sql6.freemysqlhosting.net",
+    USER: "sql6428080",
+    PASSWORD: process.env.DB_PASSWORD || 'di9uMwMrIn',
+    DB: "sql6428080",
+    PORT: 3306,
     dialect: "mysql",
     pool: {
       max: 5,
