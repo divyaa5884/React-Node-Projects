@@ -33,7 +33,7 @@ class ConnectContact extends Component {
             };
             payload.duration = parseInt(duration)*60;
             console.log('payload---', payload);
-            await axios.post('http://localhost:3001/connectCall', payload)
+            await axios.post('/connectCall', payload)
                 .then((response) => {
                     console.log('response---', response);
                 })
